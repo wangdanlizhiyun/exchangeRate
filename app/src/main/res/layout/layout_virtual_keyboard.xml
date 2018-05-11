@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_board"
+    android:padding="0.5dp"
+    >
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:text="收起键盘"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="14.285%"
+        android:background="@drawable/bg_board"/>
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toLeftOf="@id/close"
+        android:text="."
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="14.285%"
+        android:background="@drawable/bg_board"/>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="71.43%"
+        android:background="@drawable/bg_board"
+        >
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="100%"
+            android:background="@drawable/bg_board"
+            >
+
+            <TextView
+                android:id="@+id/num1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num1"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="2"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num2"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="3"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num3"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="4"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num4"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="5"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="100%"
+            >
+
+            <TextView
+                android:id="@+id/num6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="6"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num6"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="7"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num7"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="8"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num8"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="9"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+            <TextView
+                android:id="@+id/num0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/num9"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="20%"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/bg_board"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentFrameLayout>
+
+</android.support.percent.PercentRelativeLayout>

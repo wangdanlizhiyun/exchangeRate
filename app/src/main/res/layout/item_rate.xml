@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/list_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/list_item"
+            app:layout_constraintTop_toTopOf="@id/list_item"
+            app:layout_constraintBottom_toBottomOf="@id/list_item"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:text="usd"
+            android:textSize="14dp"/>
+
+        <com.exchangerate.view.VirtualKeyboardEditTextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:text="111"
+            app:layout_constraintRight_toRightOf="@id/list_item"
+            app:layout_constraintTop_toTopOf="@id/list_item"
+            app:layout_constraintBottom_toBottomOf="@id/list_item"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="0dp"
+            android:textSize="14dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
